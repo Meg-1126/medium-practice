@@ -9,223 +9,242 @@
 	<link rel="stylesheet" href="../css/article.css">
 </head>
 <body>
-	<div class="container">
-		<div class="side-menu">
+	<div class="container flex">
+		<div class="side-menu flex">
 			<div class="logo">
-				<img src="" alt="">
+				<img src="../image/img_share_logo.png" alt="">
 			</div>
 			<nav>
-				<li><a href=""></a><img src="" alt=""></li>
-				<li><a href=""></a><img src="" alt=""></li>
-				<li><a href=""></a><img src="" alt=""></li>
-				<li><a href=""></a><img src="" alt=""></li>
-				<li><a href=""></a><img src="" alt=""></li>
+				<ul class="flex">
+					<li><a href=""></a><img src="../image/icon_share_home.svg" alt=""></li>
+					<li><a href=""></a><img src="../image/icon_share_notification.svg" alt=""></li>
+					<li><a href=""></a><img src="../image/icon_share_bookmark.svg" alt=""></li>
+					<li><a href=""></a><img src="../image/icon_share_note.svg" alt=""></li>
+					<li><hr></li>
+					<li><a href=""></a><img src="../image/icon_share_write.svg" alt=""></li>
+				</ul>
 			</nav>
+			<div>
+				<!-- dummy content for design -->
+			</div>
 		</div>
 
 		<main>
-			<section>
-				<div class="inner">
-					<div><img src="" alt=""></div>
+			<section class="publisher-info">
+				<div class="inner flex">
+					<div class="img-holder"><img src="../image/img_article_sample1.jpg" alt=""></div>
 					<p><span>Published in </span>Language explained</p>
-					<a href="">Follow</a>
+					<p>·</p>
+					<p><a href="">Follow</a></p>
 				</div>
 			</section>
-			<section>
-				<div class="inner">
-					<div>
-						<div><img src="" alt=""></div>
-						<div>
-							<p>Ana K.</p>
-							<p>Feb 7 · 5 min read</p>
-						</div>
-					</div>
-					<p>Language explained</p>
-					<h1>How the Simplicity of English Grammar Makes Wordle Fun To Play</h1>
-					<p>And why Wordle wouldn’t work so well in languages with more complex grammars</p>
-					<div>
-						<img src="" alt="">
-						<p>Created by the author.</p>
-					</div>
-					<p>If you spend any time on social media, you must have heard of Wordle. After playing it myself yesterday, I got to think about how it could be implemented into other languages. But you know what? That wouldn’t be easy at all. And it’s all because we owe all the fun of this game to some specific quirks of English grammar. What quirks are those? Keep reading to find out.</p>
-
-					<h2>What is Wordle?</h2>
-					<p>Wordle is an online game in which you have to guess a daily 5-letter word. You can guess up to 6 times and on each iteration, you get clues for the letters in the words you guessed. You know what? Just read the rules off the screenshot from the <a href="">Wordle website</a> below:</p>
-					<div>
-						<img src="" alt="">
-					</div>
-
-					<h2>Why English Wordle works</h2>
-					<p>English grammatical endings increase the length of the word, which is why Wordle can work with the word length. For example, compare the word “works” with the present ending “-s” and “worked” with the past ending “-ed”. “Works” has five letters and “worked” has six. This means that when you play, you won’t miss the word solely based on its grammatical form. You will almost always miss or guess the word based on its lexical meaning, like guessing between “work” and “pork”. Guessing between “work” and “pork” is fun, right? They mean completely different things, but they differ only in one letter.</p>
-					<p>Now, guessing between “works” and “worked” would not be so much fun. You already figured out the gist: The meaning of the word is “work”, yes, but who cares if it’s in the present or past tense… Well, that’s exactly what would happen if we made Wordle, with the same rules, in languages with more inflections and conjugations than English.</p>
-					
-					<h2>How inflections ruin all the fun</h2>
-					<p>The problem is that in languages with many more grammatical endings than in English, the search for a 5-letter word wouldn’t be any easier once you know the first four letters. For example, in a language with cases, like Croatian, a noun like “torba” (bag) can have four different versions of itself and all of them with 5 letters!</p>
-					<p>These are “torba, torbe, torbu, torbi”, and they refer to the nominative, genitive, accusative, and dative/locative case of “torba” (bag), respectively. So, even after you’ve figured out “torb-”, you would still have to guess the grammatical ending indicating the case of the noun. Provided you haven’t ruled out any of the other vowels, you would have a hard time figuring it out, and you might need up to 4 trials to guess it. I think it’s pretty clear this would be more frustrating than fun.</p>
-					<p>This is not to say that maybe there isn’t a way to get around this problem, by tweaking some Wordle rules. Maybe we could accept all the different versions of “torba” (bag) as correct in the Croatian Wordle. But even then, it just doesn’t sound like as much fun to find out that the word of the day was “torba, torbe, torbu, torbi”!</p>
-					<div>
-						<img src="" alt="">
-						<p>Imagined Croatian Wordle with all the versions of “torba” (bag) considered correct. Created by the author.</p>
-					</div>
-					<p>So basically, inflections can kill all the fun of playing Wordle, and since English doesn’t have any, it’s a perfect fit for such a game. The simplicity of English grammar is once again a highly profitable feature. I say “once again” because all L2 speakers of English, including me, are very thankful for this simplicity.</p>
-					<p>With this game becoming so popular, I’m sure there will be interest in translating it, so this “inflection problem” is something developers will definitely have to take into account. Maybe they will find an easy solution and maybe this problem isn’t as big as I’m making it. We’ll wait and see, but I’m sure it will be quite some time before we see a functional version of a Croatian Wordle.</p>
-					<p>Until then, keep an eye out for linguistic quirks like this one. They pop up everywhere!</p>
-
-					<h2>Update: New Wordles popping up</h2>
-					<p>After I wrote this I realized there is already Wordle in a few other languages, and new ones are popping up all the time.</p>
-					<p>UPDATE on my experience in Wordle: I just played The New York Times Wordle and it’s much harder than the original version I linked above because the words you need to guess are simply rarer and less known. I didn’t even know the word that was the guess for today! Granted I am an L2 speaker of English, but this has never happened with the original version.</p>
-					<p>And an update on the Croatian Wordle, there is one already! Here it is: <a href="https://kveez.com/hr/rijecek/">https://kveez.com/hr/rijecek/</a></p>
-					<p>From what I can see, the problem of inflections was simply solved by only including the nominative versions of nouns, as they are listed in the dictionary, e.g. “torba”. A relatively easy fix, but it feels a bit strange that all these inflected words will never be a correct solution, although they are accepted as possible words. There is also no rule that says that only the nominative versions of nouns are possible solutions, so this is something you need to figure out as you play.</p>
-					<div>
-						<img src="" alt="">
-						<p>A screenshot from today’s <a href="">Croatian Wordle</a>: Only the nominative version of “magla” meaning “fog” was accepted as corrected. And yes, all of the words above are actual Croatian words.</p>
-					</div>
-					<p>Moreover, I think that the Croatian Wordle is easier to guess than the English one. Now, I am aware the reason for this could also be that I am a native speaker of Croatian, but I talked to some intermediate L2 speakers of Croatian and they agreed! I think the reason for this is that there are less words of 5 letters in Croatian than there are in English. Croatian words are typically longer, like “trčati” for “run”, or “mladost” for “youth”. 
-					<span> So, when you play Wordle that means that there are less 5-letter words to choose from and that makes it easier!</span></p>
-				</div>
-
-				<div>
+				<section class="author">
 					<div class="inner">
-						<div>
-							<ul>
-								<li><img src="" alt="">68</li>
-								<li><img src="" alt="">2</li>
-							</ul>
-						</div>
-						<div>
-							<ul>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-								<li><a href=""></a></li>
-							</ul>
+						<div class="author-info flex">
+							<div class="img-holder"><img src="../image/img_article_face.jpg" alt=""></div>
+							<div>
+								<p>Ana K.</p>
+								<p>Feb 7 · 5 min read</p>
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-
-			<section>
-				<div class="inner">
-					<div>
+				</section>
+				<section class="content">
+					<div class="inner">
+						<p class="accent">Language explained</p>
+						<h1 class="title">How the Simplicity of English Grammar Makes Wordle Fun To Play</h1>
+						<p>And why Wordle wouldn’t work so well in languages with more complex grammars</p>
 						<div>
-							<h4>More from Language explained</h4>
-							<p>A publication written by linguists for everyone curious about the inner workings of human language. How different are languages and why? What is grammar and why does it exist? We explore these questions and more!</p>
+							<img src="../image/img_article_sample1.jpg" alt="">
+							<p>Created by the author.</p>
+						</div>
+						<p>If you spend any time on social media, you must have heard of Wordle. After playing it myself yesterday, I got to think about how it could be implemented into other languages. But you know what? That wouldn’t be easy at all. And it’s all because we owe all the fun of this game to some specific quirks of English grammar. What quirks are those? Keep reading to find out.</p>
+						<h2 class="sub-title">What is Wordle?</h2>
+						<p>Wordle is an online game in which you have to guess a daily 5-letter word. You can guess up to 6 times and on each iteration, you get clues for the letters in the words you guessed. You know what? Just read the rules off the screenshot from the <a href="">Wordle website</a> below:</p>
+						<div>
+							<img src="../image/img_article_sample2.jpg" alt="">
+							<p>Created by the author.</p>
+						</div>
+						<h2 class="sub-title">Why English Wordle works</h2>
+						<p>English grammatical endings increase the length of the word, which is why Wordle can work with the word length. For example, compare the word “works” with the present ending “-s” and “worked” with the past ending “-ed”. “Works” has five letters and “worked” has six. This means that when you play, you won’t miss the word solely based on its grammatical form. You will almost always miss or guess the word based on its lexical meaning, like guessing between “work” and “pork”. Guessing between “work” and “pork” is fun, right? They mean completely different things, but they differ only in one letter. <br>
+						<br>
+						Now, guessing between “works” and “worked” would not be so much fun. You already figured out the gist: The meaning of the word is “work”, yes, but who cares if it’s in the present or past tense… Well, that’s exactly what would happen if we made Wordle, with the same rules, in languages with more inflections and conjugations than English.</p>
+					
+						<h2 class="sub-title">How inflections ruin all the fun</h2>
+						<p>The problem is that in languages with many more grammatical endings than in English, the search for a 5-letter word wouldn’t be any easier once you know the first four letters. For example, in a language with cases, like Croatian, a noun like “torba” (bag) can have four different versions of itself and all of them with 5 letters!<br>
+						<br>
+						These are “torba, torbe, torbu, torbi”, and they refer to the nominative, genitive, accusative, and dative/locative case of “torba” (bag), respectively. So, even after you’ve figured out “torb-”, you would still have to guess the grammatical ending indicating the case of the noun. Provided you haven’t ruled out any of the other vowels, you would have a hard time figuring it out, and you might need up to 4 trials to guess it. I think it’s pretty clear this would be more frustrating than fun. <br>
+						<br>
+						This is not to say that maybe there isn’t a way to get around this problem, by tweaking some Wordle rules. Maybe we could accept all the different versions of “torba” (bag) as correct in the Croatian Wordle. But even then, it just doesn’t sound like as much fun to find out that the word of the day was “torba, torbe, torbu, torbi”!</p>
+						<div>
+							<img src="../image/img_article_sample3.jpg" alt="">
+							<p>Imagined Croatian Wordle with all the versions of “torba” (bag) considered correct. Created by the author.</p>
+						</div>
+						<p>So basically, inflections can kill all the fun of playing Wordle, and since English doesn’t have any, it’s a perfect fit for such a game. The simplicity of English grammar is once again a highly profitable feature. I say “once again” because all L2 speakers of English, including me, are very thankful for this simplicity.<br>
+						<br>
+						With this game becoming so popular, I’m sure there will be interest in translating it, so this “inflection problem” is something developers will definitely have to take into account. Maybe they will find an easy solution and maybe this problem isn’t as big as I’m making it. We’ll wait and see, but I’m sure it will be quite some time before we see a functional version of a Croatian Wordle.<br>
+						<br>
+						Until then, keep an eye out for linguistic quirks like this one. They pop up everywhere!</p>
+						<h2 class="sub-title">Update: New Wordles popping up</h2>
+						<p>After I wrote this I realized there is already Wordle in a few other languages, and new ones are popping up all the time. <br>
+						<br>
+						UPDATE on my experience in Wordle: I just played The New York Times Wordle and it’s much harder than the original version I linked above because the words you need to guess are simply rarer and less known. I didn’t even know the word that was the guess for today! Granted I am an L2 speaker of English, but this has never happened with the original version.<br>
+						<br>
+						And an update on the Croatian Wordle, there is one already! Here it is: <a href="https://kveez.com/hr/rijecek/">https://kveez.com/hr/rijecek/</a><br>
+						<br>
+						From what I can see, the problem of inflections was simply solved by only including the nominative versions of nouns, as they are listed in the dictionary, e.g. “torba”. A relatively easy fix, but it feels a bit strange that all these inflected words will never be a correct solution, although they are accepted as possible words. There is also no rule that says that only the nominative versions of nouns are possible solutions, so this is something you need to figure out as you play.</p>
+						<div>
+							<img src="../image/img_article_sample4.jpg" alt="">
+							<p>A screenshot from today’s <a href="" class="gray">Croatian Wordle</a>: Only the nominative version of “magla” meaning “fog” was accepted as corrected. And yes, all of the words above are actual Croatian words.</p>
+						</div>
+						<p>Moreover, I think that the Croatian Wordle is easier to guess than the English one. Now, I am aware the reason for this could also be that I am a native speaker of Croatian, but I talked to some intermediate L2 speakers of Croatian and they agreed! I think the reason for this is that there are less words of 5 letters in Croatian than there are in English. Croatian words are typically longer, like “trčati” for “run”, or “mladost” for “youth”.
+						<span> So, when you play Wordle that means that there are less 5-letter words to choose from and that makes it easier!</span></p>
+					</div>
+					<div class="content-footer">
+						<div class="inner flex">
+							<div class="flex">
+								<div class="review flex">
+									<div class="img-holder"><img src="../image/icon_article_hand-clap.svg" alt=""></div>
+									<div>68</div>
+								</div>
+								<div class="review flex">
+									<div class="img-holder"><img src="../image/icon_article_comment.svg" alt=""></div>
+									<div>2</div>
+								</div>
+							</div>
+							<div class="flex social-media">
+								<div class="img-holder"><img src="../image/icon_share_twitter.svg" alt=""></div>
+								<div class="img-holder"><img src="../image/icon_share_facebook.svg" alt=""></div>
+								<div class="img-holder"><img src="../image/icon_share_linkedin.svg" alt=""></div>
+								<div class="img-holder"><img src="../image/icon_share_link.svg" alt=""></div>
+								<div class="img-holder"><img src="../image/icon_share_bookmark.svg" alt=""></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+			<section class="recommend">
+				<div class="inner">
+					<div class="flex">
+						<div class="text-area">
+							<p class="accent">More from Language explained</p>
+							<p class="gray">A publication written by linguists for everyone curious about the inner workings of human language. How different are languages and why? What is grammar and why does it exist? We explore these questions and more!</p>
 						</div>
 						<div>
-							<div>
+							<div class="btn-follow">
 								<a href="">Follow</a>
 							</div>
 						</div>
 					</div>
-					<article>
-						<div>
-							<div>
-								<div><img src="" alt=""></div>
-								<p>Ana K. <span> · Jan 30</span></p>
+					<article class="flex">
+						<div class="text-area">
+							<div class="flex">
+								<div class="img-holder"><img src="../image/img_article_face.jpg" alt=""></div>
+								<p>Ana K. <span class="gray"> · Jan 30</span></p>
 							</div>
 							<h2>We All Speak Different Languages: Why Is That a Good Thing?</h2>
 							<p>Because we can have the experience of learning each other’s languages. As a linguist, I often get asked the following: “Wouldn’t it be better if we all</p>
-							<div>
-								<div>
-									<span>Language</span>
-									<span>5 min read</span>
+							<div class="flex space-between">
+								<div class="flex article-footer">
+									<p class="category">Language</p>
+									<p class="gray">5 min read</p>
 								</div>
-								<div>
-									<img src="" alt="">
+								<div class="img-holder">
+									<img src="../image/icon_share_bookmark.svg" alt="">
 								</div>
 							</div>
 						</div>
-						<div>
-							<img src="" alt="">
+						<div class="img-holder">
+							<img src="../image/img_article_sample1.jpg" alt="">
 						</div>
 					</article>
-					<article>
-						<div>
-							<div>
-								<div><img src="" alt=""></div>
-								<p>Ana K. <span> · Nov 27, 2021</span></p>
+					<article class="flex">
+						<div class="text-area">
+							<div class="flex">
+								<div class="img-holder"><img src="../image/img_article_face.jpg" alt=""></div>
+								<p>Ana K. <span class="gray"> · Nov 27, 2021</span></p>
 							</div>
 							<h2>What Is a Language?</h2>
 							<p>A dialog about the difference between dialects and languages Just when I thought that this blog could not be any more about addressing big questions of linguistics and other humanistic disciplines, I found myself</p>
-							<div>
-								<div>
-									<span>Language</span>
-									<span>5 min read</span>
+							<div class="flex space-between">
+								<div class="flex article-footer">
+									<p class="category">Language</p>
+									<p class="gray">5 min read</p>
 								</div>
-								<div>
-									<img src="" alt="">
+								<div class="img-holder">
+									<img src="../image/icon_share_bookmark.svg" alt="">
 								</div>
 							</div>
 						</div>
-						<div>
-							<img src="" alt="">
+						<div class="img-holder">
+							<img src="../image/img_article_sample2.jpg" alt="">
 						</div>
 					</article>
-					<article>
-						<div>
-							<div>
-								<div><img src="" alt=""></div>
-								<p>Ana K. <span> · Nov 13, 2021</span></p>
+					<article class="flex">
+						<div class="text-area">
+							<div class="flex">
+								<div class="img-holder"><img src="../image/img_article_face.jpg" alt=""></div>
+								<p>Ana K. <span class="gray"> · Nov 13, 2021</span></p>
 							</div>
 							<h2>Language Explained</h2>
 							<p>Hello curious minds, Thank you for signing up for Language Explained, where we tackle big questions about how language works. Most of the articles so far have been written by me (Ana Krajinović) and I am also the</p>
-							<div>
-								<div>
-									<span>Language</span>
-									<span>1 min read</span>
+							<div class="flex space-between">
+								<div class="flex article-footer">
+									<p class="category">Language</p>
+									<p class="category">1 min read</p>
 								</div>
-								<div>
-									<img src="" alt="">
+								<div class="img-holder"> 
+									<img src="../image/icon_share_bookmark.svg" alt="">
 								</div>
 							</div>
 						</div>
-						<div>
-							<img src="" alt="">
+						<div class="img-holder">
+							<img src="../image/img_article_sample3.jpg" alt="">
 						</div>
 					</article>
-					<article>
-						<div>
-							<div>
-								<div><img src="" alt=""></div>
-								<p>Ana K. <span> · Nov 12, 2021</span></p>
+					<article class="flex">
+						<div class="text-area">
+							<div class="flex">
+								<div class="img-holder"><img src="../image/img_article_face.jpg" alt=""></div>
+								<p>Ana K. <span class="gray"> · Nov 12, 2021</span></p>
 							</div>
 							<h2>Fieldwork Is a “Hero’s Journey” of Linguistics: What Can You Learn From It?</h2>
 							<p>6 fieldwork steps that lead to great personal and scientific discoveries, told in comics. You are sitting in public transport, deep in your thoughts, when</p>
-							<div>
-								<div>
-									<span>Language</span>
-									<span>8 min read</span>
+							<div class="flex space-between">
+								<div class="flex article-footer">
+									<p class="category">Language</p>
+									<p class="gray">8 min read</p>
 								</div>
-								<div>
-									<img src="" alt="">
+								<div class="img-holder">
+									<img src="../image/icon_share_bookmark.svg" alt="">
 								</div>
 							</div>
 						</div>
-						<div>
-							<img src="" alt="">
+						<div class="img-holder">
+							<img src="../image/img_article_sample4.jpg" alt="">
 						</div>
 					</article>
-					<article>
-						<div>
-							<div>
-								<div><img src="" alt=""></div>
-								<p>Rose Hoersting<span> · Oct 17, 2021</span></p>
+					<article class="flex">
+						<div class="text-area">
+							<div class="flex">
+								<div class="img-holder"><img src="../image/img_article_face.jpg" alt=""></div>
+								<p>Rose Hoersting<span class="gray"> · Oct 17, 2021</span></p>
 							</div>
 							<h2>Do All Languages Have Adjectives?</h2>
 							<p>Not really, read more to find out why 1. Introduction German students are taught the concept of adjectives by the name “Wie-Wort” (literally: “how-word”) in elementary school. It seems therefore self-explanatory that</p>
-							<div>
-								<div>
-									<span>Linguistics</span>
-									<span>9 min read</span>
+							<div class="flex space-between">
+								<div class="flex article-footer">
+									<p class="category">Linguistics</p>
+									<p class="gray">9 min read</p>
 								</div>
-								<div>
-									<img src="" alt="">
+								<div class="img-holder">
+									<img src="../image/icon_share_bookmark.svg" alt="">
 								</div>
 							</div>
 						</div>
-						<div>
-							<img src="" alt="">
+						<div class="img-holder">
+							<img src="../image/img_article_sample1.jpg" alt="">
 						</div>
 					</article>
 					<div>
@@ -238,52 +257,52 @@
 					<h2>More from Medium</h2>
 					<div>
 						<div>
-							<div><img src="" alt=""></div>
+							<div><img src="../image/img_article_sample1.jpg" alt=""></div>
 							<p>Are these 4 False Beliefs Interfering With Your Language Learning? This is What You Should Do</p>
 						</div>
 					</div>
 					<div>
 						<div>
-							<div><img src="" alt=""></div>
+							<div><img src="../image/img_article_sample2.jpg" alt=""></div>
 							<p>One Hundred Ways To Die<br>
 							<span>A a linguistic journey into the heart of the nati..</span></p>
 						</div>
 					</div>
 					<div>
 						<div>
-							<div><img src="" alt=""></div>
+							<div><img src="../image/img_article_sample3.jpg" alt=""></div>
 							<p>Relearning my Native Tongue <br>
 							<span>Mandarin is, and will forever be, my mother’s tongue — in the sense that it is my mother[land]’s tongue.</span></p>
 						</div>
 					</div>
 					<div>
 						<div>
-							<div><img src="" alt=""></div>
+							<div><img src="../image/img_article_sample4.jpg" alt=""></div>
 							<p>Understanding Sign Language Development: Acquisition of Grammatical Facial Expressions</p>
 						</div>
 					</div>
 					<div>
 						<div>
-							<div><img src="" alt=""></div>
+							<div><img src="../image/img_article_sample1.jpg" alt=""></div>
 							<p>What No One Tells You About Learning a New Language</p>
 						</div>
 					</div>
 					<div>
 						<div>
-							<div><img src="" alt=""></div>
+							<div><img src="../image/img_article_sample2.jpg" alt=""></div>
 							<p>Why Is Learning a Language More Difficult than Other Skills?</p>
 						</div>
 					</div>
 					<div>
 						<div>
-							<div><img src="" alt=""></div>
+							<div><img src="../image/img_article_sample3.jpg" alt=""></div>
 							<p>The Origins of UK Place Names <br>
 								<span>Chesters and hamptons and burghs, oh my</span></p>
 						</div>
 					</div>
 					<div>
 						<div>
-							<div><img src="" alt=""></div>
+							<div><img src="../image/img_article_sample4.jpg" alt=""></div>
 							<p>How To ‘Bí’ in Irish Gaelic <br>
 							<span>And how to use the copula</span></p>
 						</div>
@@ -292,7 +311,7 @@
 			</section>
 		</main>
 
-		<aside>
+		<aside class="profile">
 			<div>
 				<div class="btn">
 					<a href="">Get started</a>
@@ -301,7 +320,7 @@
 			</div>
 			<input type="text">
 			<div>
-				<img src="" alt="">
+				<img src="../image/img_article_face.jpg" alt="">
 				<h4>Ana K.</h4>
 				<p>992 Followers</p>
 				<p>A linguist, PhD and comic creator writing about mental health, languages, creativity, and life stuff (<a href="">anakrajinovic.com</a>).</p>
@@ -310,7 +329,7 @@
 						<a href="">Follow</a>
 					</div>
 					<div>
-						<a href=""><img src="" alt=""></a>
+						<a href=""><img src="../image/icon_share_email.svg" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -318,14 +337,14 @@
 				<h4>Related</h4>
 				<div>
 					<div>
-						<img src="" alt="">
+						<img src="../image/img_article_sample1.jpg" alt="">
 					</div>
 					<p>My accomplished Cat<br>
 					<span>We keep hearing about how Covid has const...</span></p>
 				</div>
 				<div>
 					<div>
-						<img src="" alt="">
+						<img src="../image/img_article_sample2.jpg" alt="">
 					</div>
 					<p>“Thinner, Leaner, Stronger”: An Honest Book Review by a Women’s Health Coach</p>
 				</div>
@@ -334,7 +353,7 @@
 				</div>
 				<div>
 					<div>
-						<img src="" alt="">
+						<img src="../image/img_article_sample4.jpg" alt="">
 					</div>
 					<p>I Went Back To The Gym After 2 Years, And This Happened</p>
 				</div>
