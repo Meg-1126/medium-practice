@@ -51,6 +51,9 @@ a {
 a:hover {
   color: var(--color-hover-black);
 }
+hr {
+  color: var(--color-gray);
+}
 .flex {
   display: flex;
 }
@@ -63,6 +66,20 @@ a:hover {
 /*  -side bar ----------------------------------------------------- */
 .side-menu {
   width: 80px;
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.side-menu nav ul {
+  height: 330px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.side-menu nav ul li {
+  width: 24px;
 }
 /*  -main contents------------------------------------------------- */
 main {
