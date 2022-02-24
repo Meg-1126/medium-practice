@@ -54,3 +54,21 @@ a:hover {
 .flex {
   display: flex;
 }
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+/*  -side bar ----------------------------------------------------- */
+.side-menu {
+  width: 80px;
+}
+/*  -main contents------------------------------------------------- */
+main {
+  max-width: 1030px;
+}
+/*  -side profile-------------------------------------------------- */
+.profile {
+  max-width: 395px;
+}
