@@ -1,0 +1,163 @@
+/* BODY */
+body {
+  font-family: sohne, “Helvetica Neue”, Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.wrapper {
+  display: flex;
+  height: 1634px;
+}
+
+hr {
+  color: #e6e6e6;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* HEADER */
+.header { 
+  width: 80px;
+  /* text-align: center; */
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  height: 1634px;
+  border-style: none;
+  border-right-style: solid;
+  border-color: #e6e6e6;
+  border-width: 1px;
+}
+
+.second-child ul {
+  vertical-align: middle;
+}
+
+.header-child {
+  text-align: center;
+}
+
+.first-child .thrid-child {
+  height: 10%;
+}
+
+.second-child {
+  height: 80%;
+}
+
+.logo {
+  width: 70px;
+  height: 55px;
+}
+
+.header li {
+  width: 24px;
+  height: 24px;
+}
+
+.header .user-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+li hr {
+  width: 25px;
+}
+
+/* MAIN */
+main {
+  /* background-color: aquamarine; */
+  width: 966px;
+}
+
+.main-name {
+  font-size: 42px;
+  font-weight: 700;
+  color: #191919;
+}
+
+.main-wrapper {
+  width: 696px;
+  margin: 58px auto;
+}
+
+.tab {
+  margin-top: 45px;
+  margin-bottom: 58px;
+}
+
+.tab span {
+  font-size: 14px;
+  color: #797979;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+
+.tab .home {
+  color: #292929;
+}
+
+.post-time {
+  margin-bottom: 25px;
+  color: #757575;
+}
+
+.post-title {
+  /* margin-bottom: 40px; */
+  font-size: 32px;
+  display: inline-block;
+  color: #292929;
+  font-weight: 700;
+}
+
+.content {
+  font-size: 20px;
+  margin-top: 40px;
+  color: #292929;
+}
+
+.icons {
+  height: 30px;
+  background-color: #797979;
+  margin: 30px 0;
+}
+
+.post-photo {
+  width: 640px;
+  height: 793px;
+  display: block;
+  margin: 50px auto 35px auto;
+}
+
+/* PROFILE */
+.profile-wrapper {
+  padding: 35px 28px 25px 28px;
+  width: 362px;
+  border-style: none;
+  border-left-style: solid;
+  border-color: #e6e6e6;
+  border-width: 1px;
+}
+
+.profile-section .user-icon {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.side-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.list-icon {
+  width: 48px;
+  height: 48px;
+}
+
