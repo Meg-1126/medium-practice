@@ -1,0 +1,110 @@
+body {
+    background-color: #F24D2E;
+}
+  
+h1 {
+    color: rgb(4, 4, 32);
+    margin-left: 20px;
+}
+
+div {
+      font-family: sans-serif;
+
+}
+
+.firstWrapper {
+    display: flex;
+
+}
+
+.upperwrapper {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+    display: flex;
+    height: 74px;
+    justify-content: space-between;
+    align-items: stretch;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+}
+
+.logo {
+    height: 25px;
+    flex: 0 auto;
+    align-items: center;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #000;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    align-items: flex-end;
+    font-size: 15px;
+    padding: 5px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.wrapperleft {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: black;
+    border-right: 2px solid black;
+    position: relative;
+    top: 80px;
+
+}
+
+.blogfree {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-family: 'Soehne web dreiviertelfett', sans-serif;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.35rem;
+    text-transform: uppercase;
+
+}
+
+.publish {
+    font-size: 38px;
+    line-height: 44px;
+    margin-top: 20px;
+}
