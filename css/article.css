@@ -103,6 +103,8 @@ hr {
   justify-content: space-between;
   flex-direction: column;
   padding: 20px 5px;
+  position: sticky;
+  top: 0;
 }
 .side-menu nav ul {
   height: 330px;
@@ -364,7 +366,10 @@ main section {
 /*  -side profile-------------------------------------------------- */
 .profile {
   width: 320px;
+  height: 100vh;
   margin: 40px 30px;
+  position: sticky;
+  top: 0;
 }
 .profile p {
   font-size: 14px;
