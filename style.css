@@ -324,3 +324,152 @@ h2.tools {
   text-align: center;
 }
 
+.seventhwrapper {
+  color: #fff;
+  font-size: 20px;
+}
+
+h2.writing {
+  font-size: 70px;
+}
+
+._01-faq-block {
+  padding-top: 66px;
+  padding-bottom: 0px;
+  background-color: #000;
+  color: #fff;
+}
+
+.faq-block-top {
+  margin-bottom: 66px;
+  padding-left: 60px;
+}
+
+.header-2-wrap.faq {
+  width: 40ch;
+  max-width: 40ch;
+}
+
+.faq-block-question {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border-style: none none solid;
+  border-width: 1px;
+  border-color: #fff;
+}
+
+.faq-qa-mask {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px none #fff;
+}
+
+
+.question-left {
+  width: 100%;
+  border-bottom: 1px none #000;
+}
+
+.question-top {
+  padding-right: 40px;
+}
+
+.question-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 24px 60px 14px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.paragraph.inv.faq-question.large-paragraph {
+  font-size: 22px;
+}
+
+.paragraph.inv.large-paragraph {
+  text-align: left;
+}
+
+.paragraph.inv {
+  margin-bottom: 0px;
+}
+
+.paragraph.large-paragraph {
+  font-size: 18px;
+}
+
+.paragraph.inv {
+  color: #fff;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.paragraph {
+  position: relative;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  font-family: 'Soehne web buch', sans-serif;
+  color: #000;
+  font-size: 18px;
+  line-height: 127%;
+  font-weight: 400;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.faq-arrow-mask {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.faq-arrow {
+  font-family: 'Gt super text book', Georgia, sans-serif;
+  font-size: 2vw;
+  line-height: 100%;
+  font-weight: 400;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(180deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.faq-trigger-arrow {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.answer-bot {
+  padding-right: 60px;
+}
+
+.answer-bot {
+  overflow: hidden;
+  height: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 60px;
+  border-bottom: 1px none #000;
+}
+
