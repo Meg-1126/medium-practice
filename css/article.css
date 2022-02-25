@@ -1,8 +1,4 @@
 :root {
-  --ff-primary-default: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --ff-primary-paragraph: charter, Georgia, Cambria, "Times New Roman", Times,
-    serif;
-
   --bg-color-area: #fafafa;
   --bg-color-content-gray: #f2f2f2;
   --bg-color-content-green: #198917;
@@ -18,32 +14,42 @@
   --color-border-gray: #d4d4d4;
 }
 
+/* general setting ------------------------------------------------------------*/
 body {
   box-sizing: border-box;
-  font-family: var(--ff-primary-default);
-  color: var(--color-black);
   background-color: #fff;
+  color: var(--color-black);
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 h1 {
   font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 45px;
 }
 h2 {
   font-size: 22px;
+  font-weight: 600;
 }
 h3 {
   font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 20px 0;
 }
 h4 {
   font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 p {
+  font-family: charter, Georgia, Cambria, "Times New Roman", Times;
   font-size: 20px;
-  font-family: var(--ff-primary-paragraph);
 }
 li {
   list-style: none;
 }
 img {
+  height: 100%;
   width: 100%;
 }
 a {
@@ -57,6 +63,8 @@ a:hover {
 hr {
   color: var(--color-gray);
 }
+
+/* common class for design---------------------------------------------- */
 .flex {
   display: flex;
 }
@@ -66,7 +74,6 @@ hr {
 .container {
   max-width: 1500px;
   margin: 0 auto;
-  justify-content: center;
 }
 .gray {
   color: var(--color-gray);
@@ -74,50 +81,43 @@ hr {
 .green {
   color: var(--color-green);
 }
+.green a:hover {
+  color: var(--color-hover-green);
+}
 .img-radius {
   border-radius: 50%;
 }
-
 .btn-follow {
-  width: 75px;
   height: 35px;
+  width: 75px;
   background-color: var(--bg-color-content-green);
-  text-align: center;
   border-radius: 17.5px;
+  text-align: center;
 }
 .btn-follow a {
   width: 100%;
-  line-height: 35px;
   color: #fff;
   font-size: 14px;
-}
-.btn-follow:hover {
-  background-color: var(--color-hover-green);
+  line-height: 35px;
 }
 
-/*  -side bar ----------------------------------------------------- */
+/*  -side menu ----------------------------------------------------- */
 .side-menu {
+  height: calc(100vh - 40px);
   width: 80px;
-  height: 100vh;
-  justify-content: space-between;
   flex-direction: column;
-  padding: 20px 5px;
   position: sticky;
+  padding: 20px 5px;
   top: 0;
 }
 .side-menu nav ul {
   height: 330px;
-  justify-content: space-between;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
 }
 .side-menu nav ul li {
-  width: 22px;
   height: 22px;
-}
-.side-menu nav ul li img {
-  width: 100%;
-  height: 100%;
+  width: 22px;
 }
 /*  -main contents------------------------------------------------- */
 main {
@@ -131,7 +131,7 @@ main section {
   width: 690px;
   margin: 0 auto;
 }
-
+/* --------------------- */
 .publisher-info {
   padding: 10px 0;
   border-bottom: solid 1px var(--color-border-gray);
@@ -139,48 +139,24 @@ main section {
 .publisher-info .inner {
   align-items: center;
 }
-
-.publisher-info .img-holder {
-  width: 30px;
-  height: 30px;
-  margin-right: 15px;
-}
-.publisher-info img {
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
 .publisher-info p {
   font-size: 14px;
   font-weight: 400;
 }
 .publisher-info p:nth-of-type(2) {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 0 10px;
 }
-.publisher-info span {
-  color: var(--color-gray);
-}
-.publisher-info a {
-  color: var(--color-green);
-}
-.publisher-info a:hover {
-  color: var(--color-hover-green);
-}
-
-.author-info {
-  padding-top: 55px;
-  padding-bottom: 55px;
-}
-.author-info .img-holder {
-  width: 50px;
-  height: 50px;
+.publisher-info .img-holder {
+  height: 30px;
+  width: 30px;
   margin-right: 15px;
 }
-.author-info img {
-  height: 100%;
+.publisher-info img {
   object-fit: cover;
-  border-radius: 50%;
+}
+/* -------------------- */
+.author-info {
+  padding: 55px 0;
 }
 .author-info p {
   font-size: 16px;
@@ -190,9 +166,33 @@ main section {
   margin-top: 1em;
   color: var(--color-gray);
 }
-
+.author-info .img-holder {
+  height: 50px;
+  width: 50px;
+  margin-right: 15px;
+}
+.author-info img {
+  object-fit: cover;
+}
+/* --------------------- */
 .content {
   padding-bottom: 85px;
+}
+.content p {
+  line-height: 1.6em;
+  margin-bottom: 55px;
+}
+.content img + p {
+  text-align: center;
+  color: var(--color-gray);
+  font-size: 14px;
+  margin-top: 15px;
+}
+.content a {
+  text-decoration: underline;
+}
+.content span {
+  font-weight: 500;
 }
 .content .accent {
   color: var(--color-gray);
@@ -201,42 +201,16 @@ main section {
   letter-spacing: 0.2em;
   margin-bottom: 5px;
 }
-
-.content .title {
-  line-height: 40px;
-  margin-bottom: 45px;
-  font-weight: 600;
-}
-.content p {
-  margin-bottom: 55px;
-  line-height: 1.6em;
-}
-.content img + p {
-  text-align: center;
-  margin-top: 15px;
-  color: var(--color-gray);
-  font-size: 14px;
-}
 .content .sub-title {
-  font-weight: 600;
   margin-bottom: 0.75em;
 }
-.content a {
-  text-decoration: underline;
-}
-.content span {
-  font-weight: 500;
-}
-
+/* ------------------------- */
 .content-footer {
   position: sticky;
-  z-index: 99;
   bottom: 0;
   background-color: #fff;
   padding: 10px 0;
-}
-.content-footer .inner.flex {
-  justify-content: space-between;
+  z-index: 99;
 }
 .content-footer .review {
   align-items: center;
@@ -253,18 +227,19 @@ main section {
   width: 20px;
   height: 20px;
   margin-left: 10px;
-  vertical-align: middle;
 }
-.content-footer img {
-  height: 100%;
-}
-
+/* -------------------------- */
 .recommend {
   background-color: var(--bg-color-area);
   padding: 45px;
 }
+.recommend article {
+  align-items: center;
+  border-bottom: 1px solid var(--color-border-gray);
+  margin-top: 35px;
+  padding-bottom: 35px;
+}
 .recommend h2 {
-  font-weight: 600;
   line-height: 1.25em;
   margin-bottom: 15px;
 }
@@ -272,23 +247,14 @@ main section {
   font-size: 14px;
   line-height: 1.5em;
 }
-.recommend article {
-  align-items: center;
-  margin-top: 35px;
-  padding-bottom: 35px;
-  border-bottom: 1px solid var(--color-border-gray);
-}
-.recommend .inner > .flex {
-  justify-content: space-between;
+.recommend .category {
+  background-color: var(--bg-color-content-gray);
+  border-radius: 16px;
+  padding: 5px;
+  margin-right: 10px;
 }
 .recommend .text-area {
   width: 515px;
-}
-.recommend .category {
-  padding: 5px;
-  background-color: var(--bg-color-content-gray);
-  border-radius: 16px;
-  margin-right: 10px;
 }
 .recommend .text-area .flex {
   align-items: center;
@@ -296,16 +262,13 @@ main section {
 .recommend .text-area > .flex:first-child {
   margin-bottom: 15px;
 }
-.recommend article .text-area > p {
-  margin-bottom: 40px;
-}
 .recommend .text-area .img-holder {
-  width: 25px;
   height: 25px;
+  width: 25px;
   margin-right: 10px;
 }
-.recommend .text-area .img-holder:first-of-type img {
-  border-radius: 50%;
+.recommend article .text-area > p {
+  margin-bottom: 40px;
 }
 .recommend article .img-holder {
   width: 110px;
@@ -315,14 +278,6 @@ main section {
   height: 20px;
   margin: 0;
 }
-.recommend img {
-  height: 100%;
-}
-.recommend .accent {
-  margin-bottom: 20px;
-  font-size: 20px;
-  font-weight: 600;
-}
 .recommend .article-footer p {
   font-size: 13px;
 }
@@ -330,44 +285,41 @@ main section {
   width: 265px;
   margin: 40px auto 100px auto;
 }
-
+/* ---------------------------------------- */
 .more-article {
   background-color: var(--bg-color-area);
 }
 .more-article h2 {
-  font-size: 22px;
   font-weight: 500;
   margin-bottom: 26px;
-}
-.more-article .wrap {
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.more-article .flex-item {
-  width: 330px;
-  margin-bottom: 25px;
 }
 .more-article p {
   width: 100%;
   font-size: 13px;
   line-height: 1.4em;
 }
+.more-article .wrap {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.more-article .wrap > div {
+  width: 330px;
+  margin-bottom: 25px;
+}
 .more-article .img-holder {
-  width: 65px;
   height: 55px;
+  width: 65px;
   margin-right: 10px;
 }
 .more-article .img-holder img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 /*  -side profile-------------------------------------------------- */
 .profile {
-  width: 320px;
   height: 100vh;
-  margin: 40px 30px;
+  width: 320px;
   position: sticky;
+  margin: 40px 30px;
   top: 0;
 }
 .profile p {
@@ -384,26 +336,26 @@ main section {
   align-items: center;
 }
 .profile .btn {
-  width: 265px;
   height: 40px;
+  width: 265px;
   text-align: center;
 }
 .profile .btn a {
-  width: 100%;
   height: 100%;
+  width: 100%;
   background-color: #000;
-  color: #fff;
   border-radius: 20px;
+  color: #fff;
   line-height: 40px;
 }
 .profile .search-box {
-  position: relative;
   width: 100%;
+  position: relative;
 }
 .profile .search-box::before {
   content: "";
-  width: 15px;
   height: 15px;
+  width: 15px;
   background: url(../image/icon_share_serch.svg) no-repeat center center / auto
     100%;
   display: inline-block;
@@ -411,32 +363,21 @@ main section {
   top: 51px;
   left: 12px;
 }
-.profile input {
+.profile .search-box input {
   width: 235px;
-  padding: 10px 40px;
-  margin: 40px 0;
   border: 1px solid var(--color-border-gray);
   border-radius: 20px;
+  padding: 10px 40px;
+  margin: 40px 0;
 }
-.profile input:focus {
+.profile .search-box input:focus {
   border: 1px solid rgba(0, 0, 0, 0);
   outline: 1px solid var(--color-border-gray);
 }
 .profile .img-holder {
-  width: 88px;
   height: 88px;
+  width: 88px;
   margin-bottom: 20px;
-  border-radius: 50%;
-}
-.profile .img-holder img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.profile h4 {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 15px;
 }
 .profile .accent {
   font-size: 16px;
@@ -455,10 +396,12 @@ main section {
   text-align: center;
   margin-left: 10px;
 }
+.profile .img-holder img {
+  object-fit: cover;
+}
 .profile .btn-area .img-holder img {
   width: 60%;
   height: 60%;
-  object-fit: cover;
 }
 .profile .related-article {
   margin-bottom: 90px;
@@ -474,11 +417,6 @@ main section {
   width: 55px;
   height: 55px;
   margin-right: 10px;
-}
-.profile .related-article .img-holder img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .profile-footer a {
   color: var(--color-gray);
