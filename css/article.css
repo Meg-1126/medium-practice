@@ -3,8 +3,6 @@
   --ff-primary-paragraph: charter, Georgia, Cambria, "Times New Roman", Times,
     serif;
 
-  --fz: 32, 22, 20, 16, 14, 13, 11;
-
   --bg-color-area: #fafafa;
   --bg-color-content-gray: #f2f2f2;
   --bg-color-content-green: #198917;
@@ -40,6 +38,7 @@ h4 {
 }
 p {
   font-size: 20px;
+  font-family: var(--ff-primary-paragraph);
 }
 li {
   list-style: none;
