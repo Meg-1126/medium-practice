@@ -7,11 +7,6 @@ h1 {
     margin-left: 20px;
 }
 
-div {
-      font-family: sans-serif;
-
-}
-
 .firstWrapper {
     display: flex;
 
@@ -82,7 +77,6 @@ div {
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: flex-start;
     color: black;
     border-right: 2px solid black;
