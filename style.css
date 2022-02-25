@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -9,7 +10,6 @@ body {
 div {
   font-family: sans-serif;
   padding: 1%;
-
 }
 
 a {
@@ -24,13 +24,56 @@ h1 {
 .firstWrapper {
   display: flex;
   margin-top: 80px;
-
 }
 
 .secondWrapper {
   background-color: #000;
   display: flex;
   padding: 5%;
+}
+
+.thirdWrapper {
+  background-color: #ffd1b9;
+  display: flex;
+  padding: 30px 30px 0px;
+  border-bottom: 1px solid #000;
+}
+
+.fourthWrapper {
+  background-color: #ffd1b9;
+  display: flex;
+  padding: 30px 30px 0px;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #000;
+}
+
+.fifthWrapper {
+  background-color: #fafafa;
+  display: flex;
+  padding: 30px;
+  border-bottom: 1px solid #000;
+}
+
+.seventhWrapper {
+  display: flex;
+  border-top: 1px solid #000;
+  background-image: url(cubes.png);
+  background-color: #34a245;
+  background-position: 100% 50%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  opacity: 1;
+}
+
+.cubes-image {
+  background-image: url("cubes.png");
+  background-color: #34a245;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .upperwrapper {
@@ -102,7 +145,6 @@ h1 {
     align-items: flex-start;
     color: black;
     border-right: 2px solid black;
-
 }
 
 .wrapperright {
@@ -117,7 +159,6 @@ h1 {
   width: 400px;
 
 }
-
 
 .blogfree {
     margin-top: 20px;
@@ -211,5 +252,68 @@ h1.description {
   font-size: 15px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+h2.space {
+  font-size: 80px;
+  line-height: 95px;
+  margin-top: 20px;
+  
+}
+
+h5.space {
+  font-size: 40px;
+}
+
+.thirdwrapperleft {
+  font-family: 'Soehne web dreiviertelfett', sans-serif;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.thirdwrapperright {
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.fourthwrapperleft {
+  width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    border-right: 2px solid black;
+}
+
+.fourthwrapperright {
+  width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2.fourthspace {
+  font-size: 40px;
+}
+
+.fifthwrapper {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1.audience {
+  font-size: 60px;
+  text-align: center;
+}
+
+h2.tools {
+  font-size: 20px;
+  text-align: center;
 }
 
