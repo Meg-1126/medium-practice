@@ -58,7 +58,6 @@ h1 {
   background-color: #fafafa;
   display: flex;
   padding: 30px;
-  border-bottom: 1px solid #000;
 }
 
 .seventhWrapper {
@@ -322,6 +321,20 @@ h1.audience {
 h2.tools {
   font-size: 20px;
   text-align: center;
+}
+
+.wrapperleftsix {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wrapperrightsix {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .seventhwrapper {
