@@ -25,30 +25,55 @@
     <div class="wrapper">
       <!-- HEADER -->
       <header class="header">
-        <div class="header-child first-child">
-          <a href="#"><img src="../image/img_share_logo.png" class="logo" alt="logo"></a>
-        </div>
-        <div class="header-child second-child">
-          <nav>
-            <ul>
-              <li><a href="#"><img src="../image/icon_share_home.svg" alt="home"></a></li>
-              <li><a href="#"><img src="../image/icon_share_notification.svg" alt="notification"></a></li>
-              <li><a href="#"><img src="../image/icon_share_bookmark.svg" alt="bookmark"></a></li>
-              <li><a href="#"><img src="../image/icon_share_note.svg" alt="note"></a></li>
-              <li><hr /></li>
-              <li><a href="#"><img src="../image/icon_share_write.svg" alt=""></a></li>
-              <li>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="header-child third-child">
-          <a href="#"
-            ><img
-              src="../image/img_profile_user.jpg"
-              class="user-icon"
-              alt="user icon"
-          /></a>
+        <div class="header-wrapper">
+          <div class="header-child first-child">
+            <a href="../index.html"
+              ><img src="../image/img_share_logo.png" class="logo" alt="logo"
+            /></a>
+          </div>
+          <div class="header-child second-child">
+            <nav>
+              <ul>
+                <li>
+                  <a href="../index.html"
+                    ><img src="../image/icon_share_home.svg" alt="home"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="../image/icon_share_notification.svg"
+                      alt="notification"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="../image/icon_share_bookmark.svg" class="bookmark" alt="bookmark"
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="../image/icon_share_note.svg" alt="note"
+                  /></a>
+                </li>
+                <li><hr class="divider"/></li>
+                <li>
+                  <a href="#"
+                    ><img src="../image/icon_share_write.svg" class="write" alt=""
+                  /></a>
+                </li>
+                <li></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-child third-child">
+            <a href="#"
+              ><img
+                src="../image/img_profile_user.jpg"
+                class="user-icon"
+                alt="user icon"
+            /></a>
+          </div>
         </div>
       </header>
       <!-- MAIN -->
@@ -71,7 +96,13 @@
             <a href="#" class="post-title">Test2</a>
             <p class="content">This is the second test article.</p>
             <div class="icons">
-              <!-- place icons with links here -->
+              <div class="left-icons">
+                <img src="../image/icon_article_hand-clap.svg" alt="">
+                <img src="../image/icon_article_comment.svg" alt="">
+              </div>
+              <div class="right-icons">
+                <img src="../image/icon_share_twitter.svg" alt=""><img src="../image/icon_share_facebook.svg" alt=""><img src="../image/icon_share_linkedin.svg" alt=""><img src="../image/icon_share_link.svg" alt=""><img src="../image/icon_share_bookmark.svg" class="bookmark" alt=""><img src="" alt="">
+              </div>
             </div>
           </section>
           <hr />
@@ -89,68 +120,82 @@
                 alt="dog"
             /></a>
             <div class="icons">
-              <!-- place icons with links here -->
+              <div class="left-icons">
+                <img src="../image/icon_article_hand-clap.svg" alt="">
+                <img src="../image/icon_article_comment.svg" alt="">
+              </div>
+              <div class="right-icons">
+                <img src="../image/icon_share_twitter.svg" alt=""><img src="../image/icon_share_facebook.svg" alt=""><img src="../image/icon_share_linkedin.svg" alt=""><img src="../image/icon_share_link.svg" alt=""><img src="../image/icon_share_bookmark.svg" class="bookmark" alt=""><img src="" alt="">
+              </div>
             </div>
           </section>
         </div>
       </main>
       <!-- PROFILE -->
       <div class="profile-wrapper">
-        <div class="upgrade">
-          <button>Upgrade</button>
-        </div>
-        <div class="search-bar">
-          <input type="text" />
-        </div>
-        <div class="profile-section">
-          <a href=""
-            ><img
-              src="../image/img_profile_user.jpg"
-              class="user-icon"
-              alt="user icon"
-          /></a>
-          <p class="side-name">Megumi Akama</p>
-          <p class="title">Web Developer based in Vancouver</p>
-          <a href="#">Edit profile</a>
-        </div>
-        <div class="reading-list">
-          <h3>Lists</h3>
-          <a href="#"
-            ><img
-              src="../image/img_profile_list-icon1.jpg"
-              class="list-icon"
-              alt="list icon1"
-          /></a>
-          <a href="#"
-            ><img
-              src="../image/img_profile_list-icon2.jpg"
-              class="list-icon"
-              alt="list icon2"
-          /></a>
-          <a href="#"
-            ><img
-              src="../image/img_profile_list-icon3.jpg"
-              class="list-icon"
-              alt="list icon3"
-          /></a>
-          <div class="list-description">
-            <span>Reading list</span>
-            <span>3 stories</span>
+        <div class="profile-inner">
+          <div class="btn-wrapper">
+            <a href="#" class="upgrade-btn">Upgrade</a>
           </div>
-          <a href="#">View All</a>
-        </div>
-        <div class="footer-menu">
-          <ul>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Status</a></li>
-            <li><a href="#">Writers</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Knowable</a></li>
-          </ul>
+          <div class="search-bar">
+            <div class="magnifying-glass"></div>
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="profile-section">
+            <a href=""
+              ><img
+                src="../image/img_profile_user.jpg"
+                class="user-icon"
+                alt="user icon"
+            /></a>
+            <p class="side-name">Megumi Akama</p>
+            <p class="title">Web Developer based in Vancouver</p>
+            <a href="#" class="edit-profile">Edit profile</a>
+          </div>
+          <div class="reading-list">
+            <span class="list-title">Lists</span>
+            <div class="list-detail-wrapper">
+              <div class="list-icons">
+                <a href="#"
+                  ><img
+                    src="../image/img_profile_list-icon1.jpg"
+                    class="list-icon icon1"
+                    alt="list icon1"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="../image/img_profile_list-icon2.jpg"
+                    class="list-icon icon2"
+                    alt="list icon2"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="../image/img_profile_list-icon3.jpg"
+                    class="list-icon icon3"
+                    alt="list icon3"
+                /></a>
+              </div>
+              <div class="list-description">
+                <span class="reading-list">Reading list</span>
+                <span class="stories">3 stories</span>
+              </div>
+            </div>
+            <a href="#" class="view-all">View All</a>
+          </div>
+          <div class="footer-menu">
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Status</a></li>
+              <li><a href="#">Writers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Knowable</a></li>
+            </ul>
+          </div>
+
         </div>
       </div>
     </div>
