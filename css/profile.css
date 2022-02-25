@@ -218,21 +218,41 @@ main {
  
 }
 
-.search-bar {
-  display: flex;
+.search-wrapper {
+  /* display: flex; */
   margin-bottom: 40px;
-}
-
-/* .magnifying-glass {
-  width: 20%;
-} */
-
-input {
   width: 327px;
   height: 35px;
+  position: relative;
+}
+
+.search {
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  left: 12px;
+}
+
+.search-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.5;
+}
+
+input {
+  width: 287px;
+  height: 35px;
+  font-weight: lighter;
   border: 1px solid #e6e6e6;
   border-radius: 99em;
-  /* text-align: center; */
+  z-index: 1;
+  display: block;
+  position: absolute;
+  padding-left: 40px;
+}
+
+input:focus-visible {
+  outline: none;
 }
 
 .profile-section .user-icon {
@@ -291,7 +311,7 @@ input {
 
 .list-icons {
   position: relative;
-  width: 120px;
+  width: 110px;
 }
 
 .list-icon {
@@ -314,12 +334,18 @@ input {
 .icon3 {
   position: absolute;
   z-index: 1;
-  left: 48px;
+  left: 40px;
+}
+
+.list-description {
+  line-height: 1.5;
 }
 
 .view-all {
   font-size: 13px;
   color: #757575;
+  display: inline-block;
+  padding-top: 20px;
 }
 
 .view-all:hover {
