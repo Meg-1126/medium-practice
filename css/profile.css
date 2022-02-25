@@ -94,14 +94,7 @@ li hr {
 
 /* MAIN */
 main {
-  /* background-color: aquamarine; */
   min-width: 960px;
-}
-
-.main-name {
-  font-size: 42px;
-  font-weight: 700;
-  color: #191919;
 }
 
 .main-wrapper {
@@ -109,6 +102,22 @@ main {
   margin: 58px auto;
   padding-left: 220px;
   padding-right: 100px;
+}
+
+.main-name-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-name {
+  font-size: 42px;
+  font-weight: 700;
+  color: #191919;
+  display: block;
+}
+
+.more {
+  margin-top: 10px;
 }
 
 .tab {
@@ -135,7 +144,6 @@ main {
 }
 
 .post-title {
-  /* margin-bottom: 40px; */
   font-size: 32px;
   display: inline-block;
   color: #292929;
@@ -160,12 +168,14 @@ main {
   height: 24px;
   margin-right: 30px;
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .right-icons img {
   width: 24px;
   height: 24px;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .right-icons .bookmark {
@@ -182,7 +192,6 @@ main {
 
 /* PROFILE */
 .profile-wrapper {
-  /* padding: 35px 28px 25px 28px; */
   min-width: 393px;
   height: 1634px;
   border-style: none;
@@ -215,24 +224,42 @@ main {
   font-size: 14px;
   border-radius: 99em;
   text-align: center;
- 
 }
 
-.search-bar {
-  display: flex;
+.search-wrapper {
   margin-bottom: 40px;
-}
-
-/* .magnifying-glass {
-  width: 20%;
-} */
-
-input {
   width: 327px;
   height: 35px;
+  position: relative;
+}
+
+.search {
+  position: absolute;
+  z-index: 2;
+  top: 12px;
+  left: 12px;
+}
+
+.search-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.5;
+}
+
+input {
+  width: 287px;
+  height: 35px;
+  font-weight: lighter;
   border: 1px solid #e6e6e6;
   border-radius: 99em;
-  /* text-align: center; */
+  z-index: 1;
+  display: block;
+  position: absolute;
+  padding-left: 40px;
+}
+
+input:focus-visible {
+  outline: none;
 }
 
 .profile-section .user-icon {
@@ -265,15 +292,11 @@ input {
 
 .reading-list {
   margin-top: 50px;
+  font-size: 16px;
 }
 
 .list-title {
   font-size: 16px;
-}
-
-.reading-list {
-  font-size: 16px;
-  /* display: block; */
 }
 
 .stories {
@@ -291,7 +314,7 @@ input {
 
 .list-icons {
   position: relative;
-  width: 120px;
+  width: 110px;
 }
 
 .list-icon {
@@ -314,12 +337,18 @@ input {
 .icon3 {
   position: absolute;
   z-index: 1;
-  left: 48px;
+  left: 40px;
+}
+
+.list-description {
+  line-height: 1.5;
 }
 
 .view-all {
   font-size: 13px;
   color: #757575;
+  display: inline-block;
+  padding-top: 20px;
 }
 
 .view-all:hover {
