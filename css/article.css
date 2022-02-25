@@ -75,6 +75,11 @@ hr {
   max-width: 1500px;
   margin: 0 auto;
 }
+@media screen and (max-width: 1080px) {
+  .container.flex.space-between {
+    justify-content: center;
+  }
+}
 .gray {
   color: var(--color-gray);
 }
@@ -86,6 +91,19 @@ hr {
 }
 .img-radius {
   border-radius: 50%;
+}
+.btn {
+  height: 40px;
+  width: 265px;
+  text-align: center;
+}
+.btn a {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  border-radius: 20px;
+  color: #fff;
+  line-height: 40px;
 }
 .btn-follow {
   height: 35px;
@@ -101,8 +119,44 @@ hr {
   line-height: 35px;
 }
 
+/* #respons-header design---------------------------------------------------- */
+#respons-header {
+  display: none;
+}
+@media screen and (max-width: 1080px) {
+  #respons-header {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px -2px 10px rgb(0 0 0 / 15%);
+    height: 65px;
+    padding: 10px 25px;
+    top: 0;
+    z-index: 110;
+  }
+  #respons-header a {
+    font-size: 14px;
+  }
+  #respons-header div:nth-child(2) {
+    align-items: center;
+  }
+  #respons-header p + div {
+    margin-left: 15px;
+  }
+  #respons-header .img-holder {
+    width: 80px;
+  }
+  #respons-header .btn {
+    width: 100px;
+    height: 35px;
+  }
+  #respons-header .btn a {
+    line-height: 35px;
+  }
+}
 /*  -side menu ----------------------------------------------------- */
-.side-menu {
+#side-menu {
   height: calc(100vh - 40px);
   width: 80px;
   flex-direction: column;
@@ -110,15 +164,24 @@ hr {
   padding: 20px 5px;
   top: 0;
 }
-.side-menu nav ul {
+#side-menu .img-holder {
+  width: 80px;
+}
+#side-menu nav ul {
   height: 330px;
   align-items: center;
   flex-direction: column;
 }
-.side-menu nav ul li {
+#side-menu nav ul li {
   height: 22px;
   width: 22px;
 }
+@media screen and (max-width: 1080px) {
+  #side-menu {
+    display: none;
+  }
+}
+
 /*  -main contents------------------------------------------------- */
 main {
   width: 1030px;
@@ -314,45 +377,38 @@ main section {
 .more-article .img-holder img {
   object-fit: cover;
 }
+@media screen and (max-width: 1080px) {
+  main section {
+    border-right: none;
+    border-left: none;
+  }
+}
 /*  -side profile-------------------------------------------------- */
-.profile {
+#profile {
   height: 100vh;
   width: 320px;
   position: sticky;
   margin: 40px 30px;
   top: 0;
 }
-.profile p {
+#profile p {
   font-size: 14px;
   line-height: 1.5em;
 }
-.profile a {
+#profile a {
   font-size: 14px;
 }
-.profile p a.gray {
+#profile p a.gray {
   text-decoration: underline;
 }
-.profile div:first-child {
+#profile div:first-child {
   align-items: center;
 }
-.profile .btn {
-  height: 40px;
-  width: 265px;
-  text-align: center;
-}
-.profile .btn a {
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-  border-radius: 20px;
-  color: #fff;
-  line-height: 40px;
-}
-.profile .search-box {
+#profile .search-box {
   width: 100%;
   position: relative;
 }
-.profile .search-box::before {
+#profile .search-box::before {
   content: "";
   height: 15px;
   width: 15px;
@@ -363,31 +419,31 @@ main section {
   top: 51px;
   left: 12px;
 }
-.profile .search-box input {
+#profile .search-box input {
   width: 235px;
   border: 1px solid var(--color-border-gray);
   border-radius: 20px;
   padding: 10px 40px;
   margin: 40px 0;
 }
-.profile .search-box input:focus {
+#profile .search-box input:focus {
   border: 1px solid rgba(0, 0, 0, 0);
   outline: 1px solid var(--color-border-gray);
 }
-.profile .img-holder {
+#profile .img-holder {
   height: 88px;
   width: 88px;
   margin-bottom: 20px;
 }
-.profile .accent {
+#profile .accent {
   font-size: 16px;
   margin-bottom: 20px;
 }
-.profile .btn-area {
+#profile .btn-area {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.profile .btn-area .img-holder {
+#profile .btn-area .img-holder {
   width: 35px;
   height: 35px;
   background-color: var(--bg-color-content-green);
@@ -396,35 +452,64 @@ main section {
   text-align: center;
   margin-left: 10px;
 }
-.profile .img-holder img {
+#profile .img-holder img {
   object-fit: cover;
 }
-.profile .btn-area .img-holder img {
+#profile .btn-area .img-holder img {
   width: 60%;
   height: 60%;
 }
-.profile .related-article {
+#profile .related-article {
   margin-bottom: 90px;
 }
-.profile .related-article p,
-.profile .related-article span {
+#profile .related-article p,
+#profile .related-article span {
   font-size: 13px;
 }
-.profile .related-article .text {
+#profile .related-article .text {
   width: 265px;
 }
-.profile .related-article .img-holder {
+#profile .related-article .img-holder {
   width: 55px;
   height: 55px;
   margin-right: 10px;
 }
-.profile-footer a {
+#profile .footer a {
   color: var(--color-gray);
   font-size: 11px;
 }
-.profile-footer li {
+#profile .footer li {
   margin-right: 5px;
 }
-.profile-footer .flex {
+#profile .footer .flex {
   flex-wrap: wrap;
+}
+@media screen and (max-width: 1080px) {
+  #profile {
+    display: none;
+  }
+}
+/* footer design -----------------------------*/
+#respons-footer {
+  display: none;
+}
+@media screen and (max-width: 1080px) {
+  #respons-footer {
+    display: flex;
+    position: sticky;
+    background-color: #fff;
+    bottom: 0;
+    height: 65px;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 15%);
+    z-index: 100;
+  }
+  #respons-footer .img-holder {
+    width: calc(100vw / 3);
+    text-align: center;
+  }
+  #respons-footer .img-holder img {
+    width: 20px;
+    height: 20px;
+  }
 }
