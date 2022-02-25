@@ -3,8 +3,6 @@
   --ff-primary-paragraph: charter, Georgia, Cambria, "Times New Roman", Times,
     serif;
 
-  --fz: 32, 22, 20, 16, 14, 13, 11;
-
   --bg-color-area: #fafafa;
   --bg-color-content-gray: #f2f2f2;
   --bg-color-content-green: #198917;
@@ -40,6 +38,7 @@ h4 {
 }
 p {
   font-size: 20px;
+  font-family: var(--ff-primary-paragraph);
 }
 li {
   list-style: none;
@@ -100,11 +99,11 @@ hr {
 .side-menu {
   width: 80px;
   height: 100vh;
-  position: -webkit-sticky;
-  position: sticky;
   justify-content: space-between;
   flex-direction: column;
   padding: 20px 5px;
+  position: sticky;
+  top: 0;
 }
 .side-menu nav ul {
   height: 330px;
@@ -192,6 +191,9 @@ main section {
   color: var(--color-gray);
 }
 
+.content {
+  padding-bottom: 85px;
+}
 .content .accent {
   color: var(--color-gray);
   font-size: 13px;
@@ -227,9 +229,11 @@ main section {
 }
 
 .content-footer {
-  height: 55px;
   position: sticky;
-  padding-bottom: 85px;
+  z-index: 99;
+  bottom: 0;
+  background-color: #fff;
+  padding: 10px 0;
 }
 .content-footer .inner.flex {
   justify-content: space-between;
@@ -360,9 +364,11 @@ main section {
 }
 /*  -side profile-------------------------------------------------- */
 .profile {
-  position: sticky;
   width: 320px;
+  height: 100vh;
   margin: 40px 30px;
+  position: sticky;
+  top: 0;
 }
 .profile p {
   font-size: 14px;
