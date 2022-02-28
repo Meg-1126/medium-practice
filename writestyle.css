@@ -325,12 +325,21 @@ h2.tools {
   display: flex;
 }
 
+.box-right {
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+}
+
 .box-top {
   display: flex;
+  padding: 0%;
 }
 
 .box-bottom {
   display: flex;
+  height: 100%;
+  padding: 0%;
 }
 
 .box-left img {
@@ -343,6 +352,7 @@ h2.tools {
 .box-left {
   border-right: 2px solid black;
   height: 100%;
+  padding: 0%;
 }
 
 .box-top-left {
